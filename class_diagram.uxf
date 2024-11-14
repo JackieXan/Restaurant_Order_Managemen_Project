@@ -1,0 +1,70 @@
+-
+-id : int
+-name : String
+-address : String
+-menu : Menu
+-
++viewMenu(): void
++bookTable(): Reservation</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>754</x><y>104</y><w>234</w><h>130</h></coordinates><panel_attributes>Menu
+-
+-items : List&lt;MenuItem&gt;
+-
++addItem(MenuItem): void
++removeItem(MenuItem): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1105</x><y>130</y><w>156</w><h>104</h></coordinates><panel_attributes>MenuItem
+-
+-id : int
+-name : String
+-price : double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>416</y><w>286</w><h>169</h></coordinates><panel_attributes>Reservation
+-
+-id : int
+-tableNum : int
+-timeSlot : String (noon or evening)
+-customer : Customer
+-
++confirm(): void
++cancel(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>806</x><y>416</y><w>351</w><h>156</h></coordinates><panel_attributes>Customer
+-
+-id : int
+-name : String
+-phoneNumber : int
+-
++makeReservation(Date, Time): Reservation</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>637</x><y>663</y><w>338</w><h>169</h></coordinates><panel_attributes>Order
+-
+-id : int
+-status : String
+-type : String (Dine-in / Takeaway)
+-items : List&lt;MenuItem&gt;
+-
++addMenuItem(MenuItem): void
++removeMenuItem(MenuItem): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1118</x><y>663</y><w>286</w><h>169</h></coordinates><panel_attributes>Payment
+-
+-id : int
+-amount : double
+-method : String (Cash / Card)
+-status : String (Paid / Unpaid)
+-
++processPayment(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>663</x><y>169</y><w>117</w><h>39</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;70;10</additional_attributes></element><element><id>Relation</id><coordinates><x>975</x><y>169</y><w>156</w><h>39</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>546</x><y>260</y><w>65</w><h>182</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1..1
+</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>663</x><y>481</y><w>169</w><h>65</h></coordinates><panel_attributes>lt=-
+m1=1..1
+m2=1..n
+</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>Relation</id><coordinates><x>858</x><y>559</y><w>65</w><h>130</h></coordinates><panel_attributes>lt=-
+m1=1..n
+m2=1..1
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>962</x><y>715</y><w>182</w><h>65</h></coordinates><panel_attributes>lt=-
+m1=1..1
+m2=1..1
+</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>117</x><y>104</y><w>221</w><h>195</h></coordinates><panel_attributes>Employee
+-
+-id : int
+-lastName : String
+-firstName : String
+-function : String
+-
++changeFunction(): void
++hire(): void
++fire(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>325</x><y>169</y><w>169</w><h>65</h></coordinates><panel_attributes>lt=-
+m1=1..1
+m2=1..n
+</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element></diagram>
