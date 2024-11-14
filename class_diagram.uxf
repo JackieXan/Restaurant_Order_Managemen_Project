@@ -1,3 +1,4 @@
+<diagram program="umletino" version="15.1"><zoom_level>13</zoom_level><element><id>UMLClass</id><coordinates><x>468</x><y>104</y><w>208</w><h>169</h></coordinates><panel_attributes>Restaurant
 -
 -id : int
 -name : String
