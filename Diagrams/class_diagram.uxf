@@ -1,8 +1,8 @@
-<diagram program="umletino" version="15.1"><zoom_level>13</zoom_level><element><id>UMLClass</id><coordinates><x>585</x><y>689</y><w>156</w><h>104</h></coordinates><panel_attributes>MenuItem
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>387</x><y>585</y><w>108</w><h>72</h></coordinates><panel_attributes>MenuItem
 -
 -id : int
 -name : String
--price : double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>91</x><y>195</y><w>403</w><h>221</h></coordinates><panel_attributes>Reservation
+-price : double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>45</x><y>234</y><w>279</w><h>153</h></coordinates><panel_attributes>Reservation
 -
 -id : int
 -tableNumber: int
@@ -12,46 +12,50 @@
 -
 +isAvailable() : boolean
 +confirm() : void
-+cancel() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>715</x><y>195</y><w>351</w><h>156</h></coordinates><panel_attributes>Customer
++cancel() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>477</x><y>234</y><w>243</w><h>108</h></coordinates><panel_attributes>Customer
 -
 -phoneNumber : int
 -firstname : String
 -lastName : String
 -
-+makeReservation(Date, Time): Reservation</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>546</x><y>442</y><w>338</w><h>156</h></coordinates><panel_attributes>Order
++makeReservation(Date, Time): Reservation</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>405</y><w>234</w><h>126</h></coordinates><panel_attributes>Order
 -
 -id : int
+-customer : Customer
 -items : Arraylist&lt;MenuItem&gt;
+-waiter : Waiter
 -
 +addMenuItem(MenuItem): void
 +removeMenuItem(MenuItem): void
-+getAmount(List) : double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1027</x><y>442</y><w>286</w><h>169</h></coordinates><panel_attributes>Payment
++getAmount(List) : double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>693</x><y>405</y><w>198</w><h>117</h></coordinates><panel_attributes>Payment
 -
 -id : int
--order Order
+-order : Order
 -method : String (Cash / Card)
 -status : String (Paid / Unpaid)
 -
-+processPayment(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>481</x><y>260</y><w>260</w><h>65</h></coordinates><panel_attributes>lt=-
++processPayment(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>315</x><y>279</y><w>180</w><h>45</h></coordinates><panel_attributes>lt=-
 m1=1..1
 m2=1..n
-</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>Relation</id><coordinates><x>767</x><y>338</y><w>65</w><h>130</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>Relation</id><coordinates><x>513</x><y>333</y><w>45</w><h>90</h></coordinates><panel_attributes>lt=-
 m1=1..n
 m2=1..1
-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>871</x><y>494</y><w>182</w><h>65</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>585</x><y>441</y><w>126</w><h>45</h></coordinates><panel_attributes>lt=-
 m1=1..1
 m2=1..1
-</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>234</x><y>663</y><w>221</w><h>156</h></coordinates><panel_attributes>Manager
+</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>117</x><y>414</y><w>153</w><h>108</h></coordinates><panel_attributes>Waiter
 -
 -id : int
 -lastName : String
 -firstName : String
--
-+addMenuItem() : void
-+removeMenuItem() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>585</y><w>65</w><h>130</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>522</y><w>45</w><h>81</h></coordinates><panel_attributes>lt=-
 m1=1..n
 m2=1..n
-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>442</x><y>715</y><w>169</w><h>65</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>117</x><y>576</y><w>153</w><h>108</h></coordinates><panel_attributes>Manager
+-
++addMenuItem() : void
++removeMenuItem() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>513</y><w>27</w><h>81</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>261</x><y>612</y><w>153</w><h>36</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>Relation</id><coordinates><x>261</x><y>459</y><w>117</w><h>45</h></coordinates><panel_attributes>lt=-
 m1=1..n
 m2=1..n
 </panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element></diagram>
