@@ -7,10 +7,9 @@ public class WaiterFactory {
 
     public static Waiter buildManager(int id, String firstName, String lastName) {
         if (Helper.isNullOrEmpty(firstName) || Helper.isNullOrEmpty(lastName)) {
-            return null; // Vérifie si les noms sont vides
+            return null;
         }
 
-        // Construction de l'objet Manager via le Builder
         return new Waiter.Builder(id)
                 .firstName(firstName)
                 .lastName(lastName)
@@ -19,10 +18,10 @@ public class WaiterFactory {
 
     public static Waiter buildManager(String firstName, String lastName) {
         if (Helper.isNullOrEmpty(firstName) || Helper.isNullOrEmpty(lastName)) {
-            return null; // Vérifie si les noms sont vides
+            return null;
         }
 
-        int generatedId = Helper.generateId().hashCode(); // Génération automatique d'un ID
+        int generatedId = Helper.generateId().hashCode();
 
         return new Waiter.Builder(generatedId)
                 .firstName(firstName)
