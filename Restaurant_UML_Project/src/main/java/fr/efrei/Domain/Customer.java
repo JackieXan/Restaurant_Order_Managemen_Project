@@ -39,5 +39,8 @@ public class Customer {
     public String getFirstName() { return firstName; }
     public String getLastName() { return lastName; }
 
-
+    @Override
+    public String toString() {
+        return phoneNumber + " " + lastName + " " + lastName;
+    }
 }

@@ -5,7 +5,7 @@ import fr.efrei.Util.Helper;
 
 public class WaiterFactory {
 
-    public static Waiter buildManager(int id, String firstName, String lastName) {
+    public static Waiter buildWaiter(int id, String firstName, String lastName) {
         if (Helper.isNullOrEmpty(firstName) || Helper.isNullOrEmpty(lastName)) {
             return null;
         }
@@ -16,7 +16,7 @@ public class WaiterFactory {
                 .build();
     }
 
-    public static Waiter buildManager(String firstName, String lastName) {
+    public static Waiter buildWaiter(String firstName, String lastName) {
         if (Helper.isNullOrEmpty(firstName) || Helper.isNullOrEmpty(lastName)) {
             return null;
         }
