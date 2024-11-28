@@ -41,6 +41,6 @@ public class Customer {
 
     @Override
     public String toString() {
-        return phoneNumber + " " + lastName + " " + lastName;
+        return phoneNumber + " " + firstName + " " + lastName;
     }
 }
