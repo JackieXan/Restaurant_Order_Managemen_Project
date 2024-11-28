@@ -8,19 +8,11 @@ import fr.efrei.Util.Helper;
 import java.util.ArrayList;
 
 public class OrderFactory {
-
-    /**
-     * Creates an Order with the specified ID, Customer, and list of MenuItems.
-     *
-     * @param id      the unique ID of the order
-     * @param customer the customer placing the order
-     * @param items   the list of menu items in the order
-     * @return the created Order instance, or null if inputs are invalid
-     */
+    private static int currentId = 1;
     public static Order buildOrder(int id, Customer customer, ArrayList<MenuItem> items) {
         if (customer == null || items == null || items.isEmpty()) {
             System.out.println("Invalid inputs: Customer or items cannot be null or empty.");
-            return null; // An order must have a customer and at least one item
+            return null;
         }
 
         return new Order.Builder(id)
@@ -29,24 +21,21 @@ public class OrderFactory {
                 .build();
     }
 
-    /**
-     * Creates an Order with an auto-generated ID, Customer, and list of MenuItems.
-     *
-     * @param customer the customer placing the order
-     * @param items   the list of menu items in the order
-     * @return the created Order instance, or null if inputs are invalid
-     */
     public static Order buildOrder(Customer customer, ArrayList<MenuItem> items) {
         if (customer == null || items == null || items.isEmpty()) {
             System.out.println("Invalid inputs: Customer or items cannot be null or empty.");
-            return null; // An order must have a customer and at least one item
+            return null;
         }
 
-        int generatedId = Helper.generateId().hashCode(); // Generate a unique ID for the order
+        int generatedId = getNextId();
 
         return new Order.Builder(generatedId)
                 .customer(customer)
                 .items(items)
                 .build();
+    }
+
+    public static int getNextId(){
+        return currentId++;
     }
 }

@@ -5,6 +5,8 @@ import fr.efrei.Util.Helper;
 
 public class WaiterFactory {
 
+    private static int currentId = 1 ;
+
     public static Waiter buildWaiter(int id, String firstName, String lastName, String username, String password) {
         if (Helper.isNullOrEmpty(firstName) || Helper.isNullOrEmpty(lastName)) {
             return null;
@@ -23,7 +25,7 @@ public class WaiterFactory {
             return null;
         }
 
-        int generatedId = Helper.generateId().hashCode();
+        int generatedId = getNextId();
 
         return new Waiter.Builder(generatedId)
                 .firstName(firstName)
@@ -31,5 +33,8 @@ public class WaiterFactory {
                 .username(username)
                 .password(password)
                 .build();
+    }
+    public static int getNextId(){
+        return currentId++;
     }
 }

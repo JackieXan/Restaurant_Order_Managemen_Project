@@ -4,6 +4,7 @@ import fr.efrei.Domain.MenuItem;
 import fr.efrei.Util.Helper;
 
 public class MenuItemFactory {
+    private static int currentId = 1;
     public static MenuItem buildMenuItem(int id, String name, double price, String description) {
         if (Helper.isNullOrEmpty(name) || !Helper.isValidPrice(price)) {
             return null;
@@ -21,12 +22,15 @@ public class MenuItemFactory {
             return null;
         }
 
-        int generatedId = Helper.generateId().hashCode();
+        int generatedId = getNextId();
 
         return new MenuItem.Builder(generatedId)
                 .name(name)
                 .price(price)
                 .description(description)
                 .build();
+    }
+    public static int getNextId(){
+        return currentId++;
     }
 }
