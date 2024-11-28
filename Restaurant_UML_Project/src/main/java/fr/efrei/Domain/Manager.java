@@ -24,6 +24,18 @@ public class Manager extends Waiter {
         }
 
         @Override
+        public Builder username(String username) {
+            super.username(username);
+            return this;
+        }
+
+        @Override
+        public Builder password(String password) {
+            super.password(password);
+            return this;
+        }
+
+        @Override
         public Manager build() {
             return new Manager(this);
         }

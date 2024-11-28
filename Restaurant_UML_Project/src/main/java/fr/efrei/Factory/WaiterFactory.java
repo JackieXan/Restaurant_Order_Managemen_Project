@@ -5,7 +5,7 @@ import fr.efrei.Util.Helper;
 
 public class WaiterFactory {
 
-    public static Waiter buildWaiter(int id, String firstName, String lastName) {
+    public static Waiter buildWaiter(int id, String firstName, String lastName, String username, String password) {
         if (Helper.isNullOrEmpty(firstName) || Helper.isNullOrEmpty(lastName)) {
             return null;
         }
@@ -13,10 +13,12 @@ public class WaiterFactory {
         return new Waiter.Builder(id)
                 .firstName(firstName)
                 .lastName(lastName)
+                .username(username)
+                .password(password)
                 .build();
     }
 
-    public static Waiter buildWaiter(String firstName, String lastName) {
+    public static Waiter buildWaiter(String firstName, String lastName, String username, String password) {
         if (Helper.isNullOrEmpty(firstName) || Helper.isNullOrEmpty(lastName)) {
             return null;
         }
@@ -26,6 +28,8 @@ public class WaiterFactory {
         return new Waiter.Builder(generatedId)
                 .firstName(firstName)
                 .lastName(lastName)
+                .username(username)
+                .password(password)
                 .build();
     }
 }
