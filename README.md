@@ -45,7 +45,7 @@ Below is the communication diagram used to design this project:
 ---
 
 ## Prerequisites
-- **Java JDK 17** or higher
+- **Java JDK 21**
 - An IDE such as IntelliJ IDEA
 - Git for source code management
 
