@@ -73,10 +73,6 @@ public class Waiter {
 
     @Override
     public String toString() {
-        return "Waiter{" +
-                "id=" + id +
-                ", lastName='" + lastName + '\'' +
-                ", firstName='" + firstName + '\'' +
-                '}';
+        return getId() + " " + getFirstName() + " " + getLastName() + "\n   ->Unsername: " + getUsername();
     }
 }

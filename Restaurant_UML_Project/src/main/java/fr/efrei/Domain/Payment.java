@@ -59,14 +59,5 @@ public class Payment {
         return status;
     }
 
-    public boolean processPayment(int amount) {
-        double totalAmount = order.getAmount();
-        if (amount >= totalAmount) {
-            System.out.println("Payment processed successfully.");
-            return true;
-        } else {
-            System.out.println("Payment failed. Insufficient amount.");
-            return false;
-        }
-    }
+
 }

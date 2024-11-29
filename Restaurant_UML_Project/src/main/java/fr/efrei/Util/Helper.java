@@ -8,9 +8,6 @@ public class Helper {
         return s == null || s.trim().isEmpty();
     }
 
-    public static String generateId() {
-        return UUID.randomUUID().toString();
-    }
 
     public static boolean isValidPrice(double price) {
         return price > 0;

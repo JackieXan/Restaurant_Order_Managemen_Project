@@ -7,18 +7,6 @@ public class WaiterFactory {
 
     private static int currentId = 1 ;
 
-    public static Waiter buildWaiter(int id, String firstName, String lastName, String username, String password) {
-        if (Helper.isNullOrEmpty(firstName) || Helper.isNullOrEmpty(lastName)) {
-            return null;
-        }
-
-        return new Waiter.Builder(id)
-                .firstName(firstName)
-                .lastName(lastName)
-                .username(username)
-                .password(password)
-                .build();
-    }
 
     public static Waiter buildWaiter(String firstName, String lastName, String username, String password) {
         if (Helper.isNullOrEmpty(firstName) || Helper.isNullOrEmpty(lastName)) {

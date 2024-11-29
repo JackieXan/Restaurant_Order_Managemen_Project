@@ -9,17 +9,6 @@ import java.util.ArrayList;
 
 public class OrderFactory {
     private static int currentId = 1;
-    public static Order buildOrder(int id, Customer customer, ArrayList<MenuItem> items) {
-        if (customer == null || items == null || items.isEmpty()) {
-            System.out.println("Invalid inputs: Customer or items cannot be null or empty.");
-            return null;
-        }
-
-        return new Order.Builder(id)
-                .customer(customer)
-                .items(items)
-                .build();
-    }
 
     public static Order buildOrder(Customer customer, ArrayList<MenuItem> items) {
         if (customer == null || items == null || items.isEmpty()) {

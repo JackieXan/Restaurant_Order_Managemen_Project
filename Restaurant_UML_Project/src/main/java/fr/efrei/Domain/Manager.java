@@ -59,10 +59,6 @@ public class Manager extends Waiter {
 
     @Override
     public String toString() {
-        return "Manager{" +
-                "id=" + getId() +
-                ", firstName='" + getFirstName() + '\'' +
-                ", lastName='" + getLastName() + '\'' +
-                '}';
+        return getId() + " " + getFirstName() + " " + getLastName() + "\n   ->Unsername: " + getUsername();
     }
 }
