@@ -4,12 +4,12 @@ import java.util.List;
 
 public class Order {
     private final int id;
-    private final Customer customer;
+    private final Table table;
     private final List<MenuItem> items;
 
     private Order(Builder builder) {
         this.id = builder.id;
-        this.customer = builder.customer;
+        this.table = builder.table;
         this.items = builder.items;
     }
 
@@ -17,8 +17,8 @@ public class Order {
         return id;
     }
 
-    public Customer getCustomer() {
-        return customer;
+    public Table getTable() {
+        return table;
     }
 
     public List<MenuItem> getItems() {
@@ -29,26 +29,18 @@ public class Order {
         return items.stream().mapToDouble(MenuItem::getPrice).sum();
     }
 
-    @Override
-    public String toString() {
-        return "Order{" +
-                "id=" + id +
-                ", customer=" + customer.getFirstName() + " " + customer.getLastName() +
-                ", items=" + items +
-                '}';
-    }
 
     public static class Builder {
         private int id;
-        private Customer customer;
+        private Table table;
         private List<MenuItem> items;
 
         public Builder(int id) {
             this.id = id;
         }
 
-        public Builder customer(Customer customer) {
-            this.customer = customer;
+        public Builder table(Table table) {
+            this.table = table;
             return this;
         }
 

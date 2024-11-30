@@ -1,8 +1,8 @@
 package fr.efrei.Factory;
 
-import fr.efrei.Domain.Customer;
 import fr.efrei.Domain.MenuItem;
 import fr.efrei.Domain.Order;
+import fr.efrei.Domain.Table;
 import fr.efrei.Util.Helper;
 
 import java.util.ArrayList;
@@ -10,8 +10,8 @@ import java.util.ArrayList;
 public class OrderFactory {
     private static int currentId = 1;
 
-    public static Order buildOrder(Customer customer, ArrayList<MenuItem> items) {
-        if (customer == null || items == null || items.isEmpty()) {
+    public static Order buildOrder(Table table, ArrayList<MenuItem> items) {
+        if (table == null || items == null || items.isEmpty()) {
             System.out.println("Invalid inputs: Customer or items cannot be null or empty.");
             return null;
         }
@@ -19,7 +19,7 @@ public class OrderFactory {
         int generatedId = getNextId();
 
         return new Order.Builder(generatedId)
-                .customer(customer)
+                .table(table)
                 .items(items)
                 .build();
     }

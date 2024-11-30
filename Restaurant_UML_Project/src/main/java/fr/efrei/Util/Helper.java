@@ -13,16 +13,9 @@ public class Helper {
         return price > 0;
     }
 
-    public static String generateDefaultName(String prefix) {
-        return prefix + "_" + System.currentTimeMillis();
-    }
-
-    public static boolean isValidPhoneNumber(int phoneNum){
-        return String.valueOf(Math.abs(phoneNum)).length() == 10;
-    }
-
     public static boolean isNullOrEmpty(int i) {
         return i == 0;
     }
+
 }
 
