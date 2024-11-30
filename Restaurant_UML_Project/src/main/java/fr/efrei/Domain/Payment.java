@@ -4,20 +4,17 @@ public class Payment {
     private final int id;
     private final Order order;
     private final String method;
-    private final String status;
 
     private Payment(Builder builder) {
         this.id = builder.id;
         this.order = builder.order;
         this.method = builder.method;
-        this.status = builder.status;
     }
 
     public static class Builder {
         private final int id;
         private Order order;
         private String method;
-        private String status;
 
         public Builder(int id) {
             this.id = id;
@@ -33,10 +30,6 @@ public class Payment {
             return this;
         }
 
-        public Builder status(String status) {
-            this.status = status;
-            return this;
-        }
 
         public Payment build() {
             return new Payment(this);
@@ -55,9 +48,6 @@ public class Payment {
         return method;
     }
 
-    public String getStatus() {
-        return status;
-    }
 
 
 }
