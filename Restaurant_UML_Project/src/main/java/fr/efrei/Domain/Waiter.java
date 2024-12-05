@@ -4,8 +4,8 @@ public class Waiter {
     private final int id;
     private final String lastName;
     private final String firstName;
-    private final String username; // Added username
-    private final String password; // Added password
+    private final String username;
+    private final String password;
 
     protected Waiter(Builder builder) {
         this.id = builder.id;

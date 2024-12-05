@@ -41,21 +41,6 @@ public class Manager extends Waiter {
         }
     }
 
-    public void addMenuItem(MenuItem menuItem) {
-        if (menuItem != null) {
-            System.out.println("Menu item \"" + menuItem.getName() + "\" added by manager.");
-        } else {
-            System.out.println("Cannot add a null menu item.");
-        }
-    }
-
-    public void removeMenuItem(MenuItem menuItem) {
-        if (menuItem != null) {
-            System.out.println("Menu item \"" + menuItem.getName() + "\" removed by manager.");
-        } else {
-            System.out.println("Cannot remove a null menu item.");
-        }
-    }
 
     @Override
     public String toString() {
