@@ -5,6 +5,16 @@ This project is a Java-based application for managing restaurant orders, designe
 
 ---
 
+## User Guide
+How It Works
+Upon launching the application, users are prompted to log in as either a **Manager** or a **Waiter**. Valid credentials are required for access (like manager1, password1 or waiter1, password1). After logging in, users will see different menus based on their role.
+
+**Managers** can access options to manage tables, menu items, orders, and payments.
+**Waiters** can create and manage orders and process payments.
+Users navigate the menus by entering the corresponding number for their desired action. The application allows for efficient management of restaurant operations, ensuring a smooth workflow for both managers and waiters.
+
+---
+
 ## Features
 - **Table Management**: Add and manage table.
 - **Menu Item Management**: Add, edit, and remove menu items by a manager.
