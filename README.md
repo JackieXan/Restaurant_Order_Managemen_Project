@@ -22,13 +22,14 @@ Below is the class diagram used to design this project:
 
 ## Use Case Diagram
 Below is the use case diagram used to design this project:
-![image](https://github.com/user-attachments/assets/5e34ae08-ce77-47da-acdb-60b1b14ac689)
+![image](https://github.com/user-attachments/assets/b56c34db-55f4-4be0-8cd5-c2c43c3442ed)
 
 ---
 
 ## Sequence Diagram
 Below is the sequence diagram used to design this project:
-![image](https://github.com/user-attachments/assets/0783e842-b6d8-470b-95e7-fde3dd4dda89)
+![image](https://github.com/user-attachments/assets/d82ec875-672f-4ffb-883f-12bc1722d4d0)
+
 
 ---
 
