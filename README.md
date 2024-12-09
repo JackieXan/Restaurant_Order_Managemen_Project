@@ -6,7 +6,7 @@ This project is a Java-based application for managing restaurant orders, designe
 ---
 
 ## Features
-- **Customer Management**: Add and manage customer information.
+- **Table Management**: Add and manage table.
 - **Menu Item Management**: Add, edit, and remove menu items by a manager.
 - **Order Management**: Waiters can create, modify, and delete orders for tables.
 - **Automatic Order Total Calculation**.
@@ -16,7 +16,7 @@ This project is a Java-based application for managing restaurant orders, designe
 
 ## Class Diagram
 Below is the class diagram used to design this project:
-![image](https://github.com/user-attachments/assets/0e999db5-3e9e-49ca-8659-4a0eafcd9325)
+![image](https://github.com/user-attachments/assets/61c6b148-4430-444d-b06a-7bd765859106)
 
 ---
 
