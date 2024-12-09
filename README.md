@@ -30,19 +30,17 @@ Below is the use case diagram used to design this project:
 Below is the sequence diagram used to design this project:
 ![image](https://github.com/user-attachments/assets/ba58d0a3-65ed-49dd-832f-afaa95623a78)
 
-
-
 ---
 
 ## Object Diagram
 Below is the object diagram used to design this project:
-![image](https://github.com/user-attachments/assets/9bdd07b5-6ac6-4b90-9651-a7c59459dbfb)
+![image](https://github.com/user-attachments/assets/0ec9e940-461a-4652-b03b-18870c2d3084)
 
 ---
 
 ## Communication Diagram
 Below is the communication diagram used to design this project:
-![image](https://github.com/user-attachments/assets/3e1797c5-433d-45a6-a8b2-c29d6b6a95b9)
+![image](https://github.com/user-attachments/assets/78ba34b5-4a81-4a63-a78e-0e080607921e)
 
 ---
 
