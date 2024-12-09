@@ -28,7 +28,8 @@ Below is the use case diagram used to design this project:
 
 ## Sequence Diagram
 Below is the sequence diagram used to design this project:
-![image](https://github.com/user-attachments/assets/d82ec875-672f-4ffb-883f-12bc1722d4d0)
+![image](https://github.com/user-attachments/assets/ba58d0a3-65ed-49dd-832f-afaa95623a78)
+
 
 
 ---
